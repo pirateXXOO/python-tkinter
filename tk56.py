@@ -1,0 +1,15 @@
+from tkinter import *
+
+root = Tk()
+
+photo = PhotoImage(file="18x.gif")
+Label(root, image=photo).pack()
+
+
+def callback():
+    print("100%")
+
+
+Button(root, text="click me ", command=callback).place(relx=0.5, rely=0.5, anchor=CENTER)
+
+mainloop()
